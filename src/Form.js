@@ -49,19 +49,23 @@ export default class Form extends React.Component {
     render() {
         return (
             <form>
-                <input name="studentName" value={this.state.studentName} placeholder='Student Name' onChange={e => this.change(e)} />
-                <input name="teacherName" value={this.state.teacherName} placeholder='Teacher Name' onChange={e => this.change(e)} />
+                <input name="studentName" value={this.state.studentName} placeholder='Student Name' onChange={e => this.change(e)} /> <br></br>
+                <input name="teacherName" value={this.state.teacherName} placeholder='Teacher Name' onChange={e => this.change(e)} /> <br></br>
                 <select name="moralMark" onChange={e => this.change(e)}>
                     <option value="0" defaultValue>--- Moral Mark ---</option>
                     <option value="1">Average</option>
                     <option value="2">Good</option>
-                </select>
+                </select> <br></br>
                 <select name="abilityMark" onChange={e => this.change(e)}>
                     <option value="0" defaultValue>--- Ability Mark ---</option>
                     <option value="1">Average</option>
                     <option value="2">Good</option>
-                </select>
-                <button onClick={e => this.onSubmit(e)}>Submit!</button>
+                </select> <br></br>
+                <div className="output" id="greeting1"></div>
+                <div className="output" id="greeting2"></div>
+                <div className="output" id="greeting3"></div>
+                <div className="output" id="greeting4"></div>
+                <button onClick={e => this.onSubmit(e)}>Submit!</button> <br></br>
             </form>
         );
     }
