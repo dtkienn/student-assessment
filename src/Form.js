@@ -53,12 +53,12 @@ export default class Form extends React.Component {
                 <input name="teacherName" value={this.state.teacherName} placeholder='Teacher Name' onChange={e => this.change(e)} /> <br></br>
                 <select name="moralMark" onChange={e => this.change(e)}>
                     <option value="0" defaultValue>--- Moral Mark ---</option>
-                    <option value="1">Average</option>
+                    <option value="1">Medium</option>
                     <option value="2">Good</option>
                 </select> <br></br>
                 <select name="abilityMark" onChange={e => this.change(e)}>
                     <option value="0" defaultValue>--- Ability Mark ---</option>
-                    <option value="1">Average</option>
+                    <option value="1">Medium</option>
                     <option value="2">Good</option>
                 </select> <br></br>
                 <div className="output" id="greeting1"></div>
